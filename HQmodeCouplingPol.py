@@ -267,7 +267,7 @@ def generateMCM(window1,window2,binLo,binHi, trimAtL=10000,mbbFilename = None,tr
     
     print "PM maps done in %f secs"%(time.time() - t00)
         
-    larray = numpy.arange(3,numpy.int(trimAtL)+3)
+    larray = numpy.arange(2,numpy.int(trimAtL)+2)
     deltaLx = numpy.abs(powerMaskHolderTrim.modLMap[0,1] - powerMaskHolderTrim.modLMap[0,0])
     deltaLy = numpy.abs(powerMaskHolderTrim.modLMap[1,0] - powerMaskHolderTrim.modLMap[0,0])
     delta = numpy.min([deltaLx,deltaLy])/2.0
