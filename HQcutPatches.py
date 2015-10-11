@@ -1,9 +1,6 @@
 #!/usr/bin/env python
 from flipper import *
 from flipperPol import *
-from mpi4py import MPI
-import pickle
-
 
 def cosineSqFilter(map,lMin,lMax,vkMaskLimits=None):
     filteredMap = map.copy()

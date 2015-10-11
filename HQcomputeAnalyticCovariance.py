@@ -1,8 +1,7 @@
 #!/usr/bin/env python
 from flipper import *
-import speckMisc
-import pickle
-import liteMapPol
+from flipperpol import liteMapPol
+from speck import speckMisc
 
 def apoCorrection(patchDir,sps,arrays,spTag):
     

@@ -1,22 +1,9 @@
 #!/usr/bin/env python
-
-
-from flipper import *
-#from scipy.integrate import 
-from scipy.interpolate import splev,splrep
-from flipper import *
-from numpy.fft import fftshift,fftfreq,fft2,ifft2, ifftshift
-from scipy import interpolate
+import scipy, os, random, sys, time
 from scipy import *
-import scipy
-import os
-import random
-import sys
-import pickle
-import time
-import fortran
-
-
+from numpy.fft import fftshift,fftfreq,fft2,ifft2, ifftshift
+from flipper import *
+from . import fortran
 
 def makeTemplate(m, wl, ell, maxEll, outputFile = None):
     """

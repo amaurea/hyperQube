@@ -1,13 +1,8 @@
 #!/usr/bin/env python
-
+import scipy, pickle
 from flipper import *
 from flipperPol import *
-import HQmodeCouplingPol as mcmPol
-
-import pickle
-import scipy
-
-
+from . import HQmodeCouplingPol as mcmPol
 
 if __name__=="__main__":
     global p

@@ -1,9 +1,6 @@
 #!/usr/bin/env python
 from flipper import *
-import speckMisc
-
-
-
+from speck import speckMisc
 
 p = flipperDict.flipperDict()
 p.read_from_file(sys.argv[1])
@@ -30,9 +27,6 @@ for il in l:
         nDivs += 1
     if 'T_map_%s_%s_0'%(arrayTags[0],seasonTags[0]) in il and '_0' in il[-2:]:
         nPatches += 1
-
-
-
 
 n=100
 phiMax=2

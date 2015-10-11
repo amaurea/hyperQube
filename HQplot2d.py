@@ -1,17 +1,11 @@
 #!/usr/bin/env python
-from flipper import *
-import speckMisc
 import pickle
-import liteMapPol
-
-
-
-
-
+from flipper import *
+from flipperpol import liteMapPol
+from speck import speckMisc
 
 p = flipperDict.flipperDict()
 p.read_from_file(sys.argv[1])
-
 
 specDir = 'spectra2d/'
 patchDir= 'patches'

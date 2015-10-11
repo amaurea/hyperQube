@@ -1,15 +1,9 @@
 #!/usr/bin/env python
-
+import numpy, scipy, os, time, pickle
 from flipper import *
 from flipperPol import *
-from scipy.interpolate import splrep,splev
-import scipy
-import os
-import pickle
-import time
-import speckMisc
-import fft
-
+from speck import speckMisc
+from . import fft
 
 def readMapAndCalibrate(patchDir,ar,season,i):
     
